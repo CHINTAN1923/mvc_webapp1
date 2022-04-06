@@ -52,7 +52,7 @@ namespace MVC.Controllers
 
 
         [HttpPost]
-        public IActionResult Create([Bind("Name,Class,SubjectId")] Student studobj)
+        public IActionResult Create([Bind("StudentName,StudentClass")] Student studobj)
         {
             if (ModelState.IsValid)
             {
